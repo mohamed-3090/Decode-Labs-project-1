@@ -1,0 +1,4 @@
+SELECT product, sum(totalprice) AS sales, COUNT(orderid) FROM dataset_for_data_analytics
+WHERE `date`  > '2025-01'
+GROUP BY product
+ORDER BY totalprice
